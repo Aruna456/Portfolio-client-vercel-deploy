@@ -25,7 +25,7 @@ const AddComponent = ({fetchproject}) => {
             console.log("Added")
             alert("Added")
           }
-          fetchproject()
+         await fetchproject()
         }
       catch(error)
       {

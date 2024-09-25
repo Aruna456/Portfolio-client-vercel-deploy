@@ -29,7 +29,7 @@ const Card = ({ title,id,desc,img,link,fetchproject }) => {
         console.log("Updated")
         alert("Updated")
       }
-      fetchproject()
+      await fetchproject()
     }
   catch(error)
   {
@@ -47,9 +47,9 @@ const Card = ({ title,id,desc,img,link,fetchproject }) => {
       if(response.status===200)
       {
         console.log("Deleted");
-        alert("Error")
+        alert("Deleted")
       }
-      fetchproject()
+     await  fetchproject()
       
     } catch (error) {
       // console.log(id)
